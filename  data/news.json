@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "WSCAD SUITE X Plus 2025 Yayınlandı",
+    "excerpt": "Elektrik tasarımında yeni standartlar belirleyen WSCAD SUITE X Plus 2025, geliştirilmiş 3D panel tasarımı ve yapay zeka özellikleri ile sizlerle.",
+    "category": "Ürün Güncellemesi",
+    "date": "2025-01-15",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Cadenas PARTsolutions Webinarı",
+    "excerpt": "3D CAD parça kütüphanesi konusunda ücretsiz webinar. 25 Ocak'ta uzmanlarımızdan canlı demo.",
+    "category": "Etkinlik",
+    "date": "2025-01-08",
+    "featured": false
+  }
+]

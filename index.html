@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGA Software - Endüstriyel Yazılım Çözümleri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    <div class="logo-icon">DGA</div>
+                    <span>DGA Software</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Ana Sayfa</a></li>
+                    <li><a href="#products">Ürünler</a></li>
+                    <li><a href="#news">Haberler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="admin.html" target="_blank" class="admin-link">
+                        <i class="fas fa-cog"></i> Admin
+                    </a></li>
+                </ul>
+                
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>Endüstriyel Yazılım Çözümlerinde Öncü</h1>
+                    <p>Cadenas, WSCAD, NanoCAD yazılımları ve Weidmüller otomasyon çözümleri ile işletmenizi geleceğe taşıyın. 15+ yıllık deneyimimizle yanınızdayız.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Demo Talep Et
+                        </a>
+                        <a href="#products" class="btn btn-secondary">
+                            <i class="fas fa-arrow-down"></i>
+                            Ürünleri Keşfet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Yazılım Çözümlerimiz</h2>
+                    <p>Endüstriyel tasarım ve otomasyon alanında dünya standartlarında yazılım çözümleri sunuyoruz</p>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Bizden Haberler</h2>
+                    <p>DGA Software'dan son gelişmeler, ürün güncellemeleri ve sektörel haberler</p>
+                </div>
+
+                <div class="news-container">
+                    <div id="featured-news"></div>
+                    <div id="other-news"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Teknoloji Ortaklarımız</h2>
+                    <p>Dünya liderlerinin Türkiye distribütörü olarak kaliteli hizmet sunuyoruz</p>
+                </div>
+
+                <div class="partners-grid">
+                    <div class="partner-card fade-in">
+                        <div class="partner-logo">WSCAD</div>
+                        <div class="partner-desc">Elektrik E-CAD Çözümleri</div>
+                    </div>
+                    <div class="partner-card fade-in">
+                        <div class="partner-logo">NANOCAD</div>
+                        <div class="partner-desc">Profesyonel CAD Yazılımı</div>
+                    </div>
+                    <div class="partner-card fade-in">
+                        <div class="partner-logo">WEIDMÜLLER</div>
+                        <div class="partner-desc">Endüstriyel Otomasyon</div>
+                    </div>
+                    <div class="partner-card fade-in">
+                        <div class="partner-logo">CADENAS</div>
+                        <div class="partner-desc">3D CAD Parça Kütüphanesi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <h3>Bizimle İletişime Geçin</h3>
+                        <p>Uzman ekibimiz sizin için en uygun çözümü belirlemek ve demo sunmak için hazır. Projeleriniz hakkında konuşalım!</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Telefon</strong><br>
+                                +90 (232) 123 45 67
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>E-posta</strong><br>
+                                info@dgayazilim.com
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Adres</strong><br>
+                                Manisa, Türkiye
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form fade-in" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Şirket</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">İlgilendiğiniz Ürün</label>
+                            <select id="product" name="product">
+                                <option value="">Seçiniz...</option>
+                                <option value="wscad">WSCAD SUITE</option>
+                                <option value="nanocad">NanoCAD Plus</option>
+                                <option value="weidmuller">Weidmüller Otomasyon</option>
+                                <option value="cadenas">Cadenas PARTsolutions</option>
+                                <option value="energy">Enerji İzleme Sistemleri</option>
+                                <option value="services">Teknik Hizmetler</option>
+                                <option value="other">Genel Bilgi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" placeholder="Projeniz veya ihtiyaçlarınız hakkında detay verebilir misiniz?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>DGA Software</h4>
+                    <p>Endüstriyel yazılım çözümlerinde 15+ yıllık deneyim. Cadenas, WSCAD, NanoCAD ve Weidmüller ürünlerinin Türkiye distribütörü.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Ürünlerimiz</h4>
+                    <a href="#wscad">WSCAD SUITE</a>
+                    <a href="#nanocad">NanoCAD Plus</a>
+                    <a href="#weidmuller">Weidmüller Otomasyon</a>
+                    <a href="#cadenas">Cadenas PARTsolutions</a>
+                    <a href="#energy">Enerji İzleme</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <a href="#services">Teknik Destek</a>
+                    <a href="#services">Profesyonel Eğitim</a>
+                    <a href="#services">Danışmanlık</a>
+                    <a href="#services">Proje Yönetimi</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <a href="tel:+902321234567">+90 (232) 123 45 67</a>
+                    <a href="mailto:info@dgayazilim.com">info@dgayazilim.com</a>
+                    <a href="#">Manisa, Türkiye</a>
+                    <a href="#news">Haberler</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DGA Software. Tüm hakları saklıdır. | Gizlilik Politikası | Kullanım Şartları</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

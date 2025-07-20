@@ -1,0 +1,30 @@
+{
+  "name": "dga-software-website",
+  "version": "1.0.0",
+  "description": "DGA Software - Endüstriyel Yazılım Çözümleri Web Sitesi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Building site...'",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ga-dga/dga_site_claudeSonnet4.git"
+  },
+  "keywords": [
+    "dga",
+    "software",
+    "cad",
+    "wscad",
+    "nanocad",
+    "cadenas",
+    "weidmuller"
+  ],
+  "author": "DGA Software",
+  "license": "MIT",
+  "homepage": "https://ga-dga.github.io/dga_site_claudeSonnet4/",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
